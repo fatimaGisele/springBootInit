@@ -9,5 +9,7 @@
     <H1 th:text="${title}"></H1>
     <h2 th:text="${user.name}"></h2>
     <h2 th:text="${user.lastName}"></h2>
+    <h2 th:if="${user.email != null}" th:text="${user.email}"></h2>
+    <h2 th:if="${user.email == null}" th:text="${'Debe registrar su email'}"></h2>
 </body>
 </html>
