@@ -11,5 +11,8 @@
     <h2 th:text="${user.lastName}"></h2>
     <h2 th:if="${user.email != null}" th:text="${user.email}"></h2>
     <h2 th:if="${user.email == null}" th:text="${'Debe registrar su email'}"></h2>
+    <a th:href="@{/List}"> Ver lista de Usuarios</a><br>
+    <a th:href="@{'api/params/holis?msg='+milanesita-bella}"> Ir </a><br>
+    <a th:href="@{/api/params/pichus(txt='milanesita bella', Code = 2)}"> Ir </a><br>
 </body>
 </html>
